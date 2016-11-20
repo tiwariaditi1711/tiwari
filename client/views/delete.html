@@ -1,0 +1,15 @@
+<table>
+  <tr>
+    <th>Movie Name</th>
+    <th>Genre</th>
+    <th>Language</th>
+    <th>Duration</th>
+  </tr>
+  <tr ng-repeat="x in movieData">
+    <td>{{x.MovieName}}</td>
+    <td>{{x.Genre}}</td>
+    <td>{{x.Language}}</td>
+    <td>{{x.Duration}}</td>
+    <td><button ng-click="DeleteMovie(x)">Remove Movie</button></td>
+  </tr>
+</table>
